@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- CSS External Link -->
+<link rel="stylesheet" href="css\style.css">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header class="text-center">
+        <h1 class="text-3xl font-bold text-pink-500 mt-5">Todo List Dahlia</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-2">
+
+        <form>
+            <div class="flex justify-center mt-5 mb-5 gap-2">
+                <input type="text" id="todo-input" placeholder="Add a new task" class="border-2 border-pink-200 bg-pink-400 p-2 rounded w-1/2 ">
+                <input type="date" id="date-input" placeholder="Add a due date" class="border-2 border-pink-200 bg-pink-400 p-2 rounded w-1/2 ">
+                <button type="button" onclick="validateForm();" class="text-1xl font-bold bg-pink-500 text-pink-100 p-2 rounded w-10">+</button>
+            </div>
+        </form>
+
+        <!--Action Section-->
+        <section class="flex justify-between">
+            <button id="filter-button" class="bg-pink-500 text-white p-1 rounded w-15">Filter</button>
+            <button onclick="clearTodos();" class="bg-red-500 text-white p-1 rounded w-15">Clear</button>
+        </section>
+
+        <!-- Todo List Section-->
+        <section id="todo-list" class="mt-5">
+            <!---List Dummy-->
+            <div>
+                <p class="text-grey-700">Not todos added yet</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="text-center text-sm mt-5">© 2025 Todo List Dahlia.</p>
+    </footer>
+
+   <!-- JavaScript External Link -->
+   <script src="js\script.js"></script>
+</body>
+
+</html>
